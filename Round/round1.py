@@ -5,4 +5,8 @@
 def summarize_text_file(filename):
     with open(filename, 'r') as file:
         content = file.read()
+        lines = content.split('\n')
+        words = content.split()
+        characters = list(content.replace('\n', '')) 
+        return lines, words, characters
         
